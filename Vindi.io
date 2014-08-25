@@ -1,7 +1,7 @@
 Vec2 := Sequence clone setItemType("float32") setSize(2) do(
 	point := method(asStruct(list("float32", "x", "float32", "y")))
 	fromPoint := method(p, clone withStruct(list("float32", p x, "float32", p y)))
-	)
+)
 
 Point := Object clone do(
 	x ::= 0
@@ -51,7 +51,7 @@ Vindi Tile := Object clone do(
   code ::= nil
 
   x := method(pos at(0))
-  y := method(pos at(0))
+  y := method(pos at(1))
 
   asString := method(code)
 
