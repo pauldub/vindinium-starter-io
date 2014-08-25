@@ -38,5 +38,6 @@ Bot := Object clone do(
 		game := Vindi newGame(self key)
 		while(game finished == "false",
 			game = game move("Stay")
-		)
-	)
+		))
+)
+```
